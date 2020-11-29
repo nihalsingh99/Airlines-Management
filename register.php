@@ -1,3 +1,5 @@
+
+<?php include("./server/login_server.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,34 +53,36 @@
                                         <h3>CREATE YOUR ACCOUNT AND JOIN WITH US!</h3>
                                     </div>
                                     <div class="form-register">
+                                      <form class="" action="register.php" method="post">
                                         <div class="row">
                                             <div class="col-md-6 col-lg-12">
                                                 <div class="form-group name">
                                                     <label>NAME</label>
-                                                    <input type="text" class="form-control" placeholder="Enter Your Name..."> <i class="fas fa-user"></i>
+                                                    <input type="text" class="form-control" name="username" placeholder="Enter Your Name..."> <i class="fas fa-user"></i>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-lg-12">
                                                 <div class="form-group email">
                                                     <label>EMAIL</label>
-                                                    <input type="text" class="form-control" placeholder="Enter Your Email..."> <i class="fas fa-envelope"></i>
+                                                    <input type="text" class="form-control" name="email" placeholder="Enter Your Email..."> <i class="fas fa-envelope"></i>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-lg-12">
                                                 <div class="form-group pw">
                                                     <label>PASSWORD</label>
-                                                    <input type="password" class="form-control" placeholder="Enter Your Password..."> <i class="fas fa-key"></i>
+                                                    <input type="password" class="form-control" name="password_1" placeholder="Enter Your Password..."> <i class="fas fa-key"></i>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-lg-12">
                                                 <div class="form-group re-pw">
                                                     <label>CONFIRM PASSWORD </label>
-                                                    <input type="password" class="form-control" placeholder="Enter Your Password..."> <i class="fas fa-key"></i>
+                                                    <input type="password" class="form-control" name="password_2" placeholder="Enter Your Password..."> <i class="fas fa-key"></i>
                                                 </div>
                                             </div>
                                         </div>
-                                        
-                                        <button type="submit" class="btn btn-primary">create account</button>
+
+                                        <button type="submit" name="reg_user" class="btn btn-primary">create account</button>
+                                      </form>
                                     </div>
                                 </div>
                             </div>

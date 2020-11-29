@@ -1,3 +1,5 @@
+<?php include("./server/login_server.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,15 +51,18 @@
                                         <h3>LOGIN TO YOUR traveloky.COM ACCOUNT!</h3>
                                     </div>
                                     <div class="form-login">
+                                      <form class="" action="login.php" method="post">
                                         <div class="form-group email">
-                                            <label>EMAIL</label>
-                                            <input type="text" class="form-control" placeholder="Enter Your Email..."> <i class="fas fa-user"></i>
+                                            <label>USERNAME</label>
+                                            <input type="text" class="form-control" name="username" placeholder="Enter Your Username..."> <i class="fas fa-user"></i>
                                         </div>
                                         <div class="form-group pw">
                                             <label>PASSWORD</label>
-                                            <input type="text" class="form-control" placeholder="Enter Your Password"> <i class="fas fa-key"></i>
+                                            <input type="text" class="form-control" name="password" placeholder="Enter Your Password"> <i class="fas fa-key"></i>
                                         </div>
-                                        <button type="submit"  class="btn btn-primary">Sign In</button>
+                                        <button type="submit"  name="login_user" class="btn btn-primary">Sign In</button>
+                                      </form>
+
                                     </div>
                                 </div>
                             </div>

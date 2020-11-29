@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+  if (!isset($_SESSION['username'])) {
+    $_SESSION['msg'] = "You must log in first";
+    header('location: .././index.php');
+  }
+  if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['username']);
+    header("location: .././index.php");
+  }
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -11,14 +25,14 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,700&display=swap" rel="stylesheet">
     <!-- Library CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-datepicker.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
     <!-- Template CSS -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,7 +57,7 @@
                         <div class="col-md-6">
                             <ul class="topbar-left list-unstyled list-inline float-left">
                                 <li class="language">
-                                    <a href="index.html#" class="dropdown-text">
+                                    <a href="index.php#" class="dropdown-text">
                                         <img alt=""><span>Travel</span>
 
                                     </a>
@@ -54,10 +68,11 @@
                         </div>
                         <div class="col-md-6">
                             <ul class="topbar-right list-unstyled list-inline float-right">
-                                <li class="topbar-login"><a href="login.php"><i class="fas fa-user"></i>Login</a>
+                                <li class="topbar-login"><a href="login.php"><i class="fas fa-user"></i><?php  if (isset($_SESSION['username'])) : ?>
+                          <?php echo $_SESSION['username']; ?>
+             <?php endif ?></a>
                                 </li>
-                                <li class="topbar-register"><a href="register.php"><i class="fas fa-edit"></i>Register</a>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -69,13 +84,13 @@
                        <div class="col-md-12">
                            <div class="brand-logo">
                                <div class="logo-white">
-                                    <a href="index.html">
+                                    <a href="index.php">
 
                                 </a>
                                </div>
                                <div class="logo-black">
-                                    <a href="index.html">
-                                    <img src="img/logo-1.png" alt="" class="img-fluid">
+                                    <a href="index.php">
+                                    <img src="../img/logo-1.png" alt="" class="img-fluid">
                                 </a>
                                </div>
                             </div>
@@ -399,14 +414,14 @@
     </footer>
     <!-- End Footer Style -->
     <!-- Bootstrap JavaScript -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/bootstrap-datepicker.min.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/owl.carousel.js"></script>
+    <script src="../js/bootstrap-datepicker.min.js"></script>
+    <script src="../js/wow.min.js"></script>
     <!-- Custom scripts  -->
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
