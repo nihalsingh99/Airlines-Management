@@ -99,7 +99,7 @@ session_start();
                                 <ul class="navbar-nav">
                                     <li class="nav-item"> <a class="nav-link active" href="index.php">Home</a>
                                     </li>
-                                    <li class="nav-item"> <a class="nav-link" href="booking.php">Bookings</a>
+                                    <li class="nav-item"> <a class="nav-link" href="tour-result-list.html">Bookings</a>
                                     </li>
                                     <li class="nav-item"> <a class="nav-link" href="contact.html">contact</a>
                                    </li>
@@ -113,7 +113,7 @@ session_start();
                                 <ul class="navbar-nav" id="accordion">
                                     <li class="nav-item"> <a class="nav-link active" data-toggle="collapse" data-target="#home" aria-expanded="true" aria-controls="home" href="index.php">Home</a>
                                      </li>
-                                    <li class="nav-item"> <a class="nav-link" data-toggle="collapse" data-target="#tour" aria-expanded="true" aria-controls="tour" href="tour-result-list.html">Bookings</a>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="collapse" data-target="#tour" aria-expanded="true" aria-controls="tour" href="booking.php">Bookings</a>
                                       </li>
                                   <li class="nav-item"> <a class="nav-link" href="contact.html">contact</a>
                                     </li>

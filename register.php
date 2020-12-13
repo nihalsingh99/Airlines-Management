@@ -1,4 +1,3 @@
-
 <?php include("./server/login_server.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
