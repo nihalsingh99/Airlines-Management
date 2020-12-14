@@ -1,21 +1,33 @@
 
 /* =========================================
+
+Theme Name: Traveloky - Travel Tour HTML Template
+Author: AliceLab
+Description: Version: 1.0
+
+=========================================
+This files table contents are outlined below
 ============================
 Table of Content
 ============================
+
 - Title
-- Button
-- Preloader
+
+
 - Header
-- Slide Section
-- Tab Search
-- Number Feature
-- Contact Us
+- Top Bar
+
+- Tab Search Section
+- Awesome Tours Section
+- Services Tour Section
+- Number Features Section
+
+- Contact Us Section
 - Footer
+
+
 - Page Login
 - Page Register
-
-
 
 /* ================ Default CSS ================= */
 
@@ -57,12 +69,18 @@ button:focus {
 .custom-control-label::before {
   box-shadow: none !important;
 }
-
+/* ===== Typography ===== */
 /* ===== Title ===== */
 
 .title-page {
   margin-bottom: 40px;
 }
+/* ===== Button ===== */
+
+
+/* ===== Form ===== */
+
+/* ===== Checkbox & Radio Button ===== */
 
 /*===== Radio Button ======*/
 .group-radio {
@@ -117,7 +135,7 @@ button:focus {
    border-radius: 50px;
 }
 
-
+/* ===== Button Back Top ===== */
 /*===== Preloader =====*/
 
 .spinner-wrapper {
@@ -636,6 +654,46 @@ ul.navbar-nav li.nav-item.btn-search:hover i {
 ul.navbar-nav li i {
   transition: all 0.4s ease;
 }
+.nav-search {
+  position: absolute;
+  top: 75px;
+  right: 21px;
+  padding: 20px;
+  background-color: #ffffff26;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  transition: all 0.4s;
+  opacity: 1;
+  z-index: 1;
+}
+.nav-search.hide {
+  display: block;
+  opacity: 0;
+  right: -100px;
+}
+.nav-search form input[type='text'] {
+  display: table-cell;
+  width: 225px;
+  height: 40px;
+  padding: 0 20px;
+  border: none;
+  background: #f7f7f7;
+  margin-right: -4px;
+}
+.nav-search form .searchbutton {
+  position: relative;
+  top: -1px;
+  display: table-cell;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  background-color: #33ca53;
+  box-shadow: none;
+  color: #fff;
+}
+/* ======= Content Page ======= */
 
 /* ============= Slide Section ============= */
 
@@ -1048,7 +1106,137 @@ ul.navbar-nav li i {
   top: 32px;
   color: #525252;
 }
+/* ============= Awesome Tours Section ============= */
 
+.awesome-tour {
+  padding: 100px 0px;
+  background-color: #fff;
+}
+.card-tour {
+  background: #fff;
+  border-radius: 4px;
+  transition: all 0.4s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.card-tour .group-btn-card a.btn.btn-primary {
+  padding: 12px 14px;
+  width: 140px;
+  margin-right: 8px;
+  transition: all 0.4s;
+}
+.card-tour .group-btn-card a.btn.btn-primary:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #316ffe;
+  border-color: #316ffe !important;
+  color: #fff;
+}
+.card-tour .group-btn-card a.btn.btn-secondary {
+  padding: 12px 14px;
+  width: 140px;
+  margin-left: 8px;
+  background: none;
+  color: #343a40;
+  border: 2px solid #f3f3f3;
+  transition: all 0.4s;
+}
+.card-tour .group-btn-card a.btn.btn-secondary:hover {
+  box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
+  background-color: #316ffe;
+  border-color: #316ffe !important;
+  color: #fff;
+}
+.card-tour:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+.card-tour ul.list-info li {
+  display: table-cell;
+  padding: 0;
+  border-right: 1px solid #e9e9e9;
+}
+.card-tour ul.list-info li a {
+  position: relative;
+  top: 0;
+  right: 0;
+  display: block;
+  padding: 10px 0;
+  transition: all 0.4s;
+  color: #b3b3b3;
+}
+.card-tour ul.list-info li a:hover {
+  background: #316ffe;
+  color: #fff !important;
+  text-decoration: none;
+}
+.card-tour ul.list-info li a i {
+  margin-right: 6px;
+}
+.card-tour ul.list-info {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid #e9e9e9;
+  margin: 12px 0px;
+  display: table;
+}
+.content-price {
+  margin-bottom: 18px;
+  border-bottom: 1px solid #e9e9e9;
+}
+.card-tour .card-body {
+  padding-top: 0px;
+}
+.card-tour .card-body h5 {
+  margin: 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 24px;
+}
+.content-price span.price {
+  font-size: 36px;
+  font-weight: bold;
+  color: #33ca53;
+}
+.content-price span.for-price {
+  float: right;
+  margin-top: 14px;
+  font-weight: 300;
+}
+.content-price span.for-price i {
+  margin-right: 10px;
+}
+.card-tour .images-card-tour {
+  position: relative;
+  overflow: hidden;
+  padding: 12px 12px;
+}
+.group-btn-card {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.card-tour .images-card-tour img {
+  transition: all 0.4s;
+  overflow: visible;
+}
+.group-card-tour-btn a.btn.btn-outline {
+  background: #ffffff;
+  display: inline-block;
+  border: 2px solid #dee2e6;
+  transition: all 0.4s;
+  color: #343a40;
+}
+.group-card-tour-btn a.btn.btn-outline:hover {
+  background: #33ca53;
+  border: 2px solid #33ca53;
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
+}
+.group-card-tour-btn {
+  text-align: center;
+  margin-top: 44px;
+}
 /* ============= Services Tour Section ============= */
 
 .services-tour {
@@ -1109,7 +1297,73 @@ ul.navbar-nav li i {
   color: #fff;
   font-weight: 100;
 }
+/* ============= About Us Section ============= */
 
+.about-us {
+  padding: 100px 0px;
+}
+.about-us .text-about h3 {
+  margin-bottom: 16px;
+}
+.about-us .text-about {
+  margin-top: 24px;
+}
+
+.list-featured-about{
+    margin-top: 28px;
+}
+.about-item {
+    margin-bottom: 12px;
+}
+.about-item .media-img i {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 8px;
+    margin-right: 12px;
+    border: 2px solid #dee2e6;
+    color: #e9ecef;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.about-item .media-img i:hover {
+    border: 2px solid #dee2e6;
+    color: #ffffff;
+    background: #316ffe;
+}
+
+
+.about-item .media-body h5 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #316ffe;
+}
+
+.about-us .text-about-button {
+  margin-top: 32px;
+}
+.about-us .text-about-button a.btn.btn-primary {
+  margin-right: 24px;
+}
+.about-us .text-about-button a.btn.btn-secondary {
+  background: none;
+  display: inline-block;
+  border: 2px solid #dee2e6;
+  transition: all 0.4s;
+  color: #343a40;
+}
+.about-us .text-about-button a.btn.btn-secondary:hover {
+  border: 2px solid #33ca53;
+  background: #33ca53;
+  box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
+  color: #fff;
+}
+.text-about p:nth-child(2) {
+  margin-bottom: 12px;
+}
 /* ============= Contact Us Section ============= */
 
 .contact-us {
@@ -1118,7 +1372,21 @@ ul.navbar-nav li i {
   background-size: cover;
   background-position: center;
 }
+.form-contact-us .title-form h3 {
+  font-size: 18px;
+  font-weight: 100;
+  margin-top: 4px;
+  margin-bottom: 18px;
+  line-height: 30px;
+  color: #fff;
+}
 
+.form-contact-us {
+  background: #316ffee0;
+  padding: 34px 24px;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
 /* ============= Footer ============= */
 
 .bg-footer {
@@ -1158,8 +1426,38 @@ ul.navbar-nav li i {
   display: block;
   margin-bottom: 14px;
 }
-
-
+.info-company-widget .content-widget span i {
+  margin-right: 8px;
+}
+.title-widget h4 {
+  color: #fff;
+  text-transform: uppercase;
+}
+.title-widget hr {
+  border-top: 2px solid rgb(255, 255, 255);
+  width: 40px;
+  margin-left: 0;
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+.content-widget ul {
+  padding: 0;
+  list-style: none;
+}
+.content-widget ul li {
+  margin-bottom: 12px;
+}
+.content-widget ul li a {
+  color: #ffffffb3;
+  font-weight: 300;
+  transition: all 0.4s;
+  font-size: 15px;
+}
+.content-widget ul li a:hover {
+  text-decoration: none;
+  color: #fff;
+}
 /* ============= Page Login ============= */
 
 .page-login {
@@ -1283,4 +1581,99 @@ ul.navbar-nav li i {
   margin: auto;
   margin-top: 24px;
   margin-bottom: 18px;
+}
+
+
+/* ============= Page FAQ ============= */
+
+
+.bg-faq-breadcrumb {
+  background-image: url(../img/bg-breadcrumb-faq.jpg);
+  background-size: contain;
+}
+.accordion.question-faq .card-header {
+    padding: 0px;
+}
+.accordion.question-faq {}
+
+.accordion.question-faq .card {
+    border: none;
+    margin-bottom: 16px;
+}
+
+.accordion.question-faq .btn-link.focus, .btn-link:focus {
+    background: #316ffe;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.accordion.question-faq .btn-link.focus, .btn-link:hover {
+    text-decoration: none;
+}
+.accordion.question-faq .btn {
+    width: 100%;
+    text-align: left;
+    padding: 16px 18px;
+}
+
+.accordion.question-faq .btn-link {
+    color: #212529;
+}
+
+.form-request {
+  background-image: url(../img/bg-form-request.jpg);
+  padding: 100px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.form-request-section {
+    padding: 36px 16px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.form-request-section h4 {
+    font-size: 24px;
+    color: #212529;
+}
+
+.form-request-section h5 {
+    color: #212529;
+}
+
+.form-request-section h5 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 6px;
+    margin-bottom: 24px;
+}
+
+textarea.textarea-request-form {
+    width: 100%;
+    padding: 12px 12px;
+    height: 150px;
+    border-radius: 4px;
+    position: relative;
+    border: 2px solid #e9ecef;
+}
+textarea.textarea-request-form:focus {
+    color: #495057;
+    border-color: #316ffe;
+    background-color: #fff;
+    outline: 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+}
+.form-request-section button.btn.btn-secondary {
+    display: block;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 4px;
+    border: 3px solid #33ca53;
+    background: #33ca53;
+}
+
+.form-request-section button.btn.btn-secondary:hover {
+    border: 3px solid #343a40;
+    background: #343a40;
 }

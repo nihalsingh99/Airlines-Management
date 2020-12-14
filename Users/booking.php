@@ -150,12 +150,6 @@ session_start();
                         </div>
                     </div>
                 </div>
-                <div class="bg-wave-top">
-                    <div class="wave wave1" style="background-image: url(img/bg-wave-slide.png);"></div>
-                    <div class="wave wave2" style="background-image: url(img/bg-wave-slide.png);"></div>
-                    <div class="wave wave3" style="background-image: url(img/bg-wave-slide.png);"></div>
-                    <div class="wave wave4" style="background-image: url(img/bg-wave-slide.png);"></div>
-                </div>
             </div>
             <!-- Tab Search Section -->
             <div class="tab-search">
@@ -349,7 +343,7 @@ session_start();
 
             <!-- End About Us Section -->
             <!-- CTA Section -->
-          
+
             <div class="contact-us">
                 <div class="content-contact-us">
                     <div class="container">

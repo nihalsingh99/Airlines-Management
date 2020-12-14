@@ -150,13 +150,7 @@ session_start();
                         </div>
                     </div>
                 </div>
-                <div class="bg-wave-top">
-                    <div class="wave wave1" style="background-image: url(img/bg-wave-slide.png);"></div>
-                    <div class="wave wave2" style="background-image: url(img/bg-wave-slide.png);"></div>
-                    <div class="wave wave3" style="background-image: url(img/bg-wave-slide.png);"></div>
-                    <div class="wave wave4" style="background-image: url(img/bg-wave-slide.png);"></div>
-                </div>
-            </div>
+              </div>
 
 
             <!-- End Awesome Tours Section -->
@@ -267,7 +261,6 @@ session_start();
 
             <!-- End About Us Section -->
             <!-- CTA Section -->
-            
 
             <div class="contact-us">
                 <div class="content-contact-us">
@@ -277,8 +270,7 @@ session_start();
                                 <div class="form-contact-us animated-Fade-In-Up-2">
                                     <h1>Travel</h1>
                                     <p>This is the world finest site for Flight bookings.<br>
-                                    We offer the most cheapest and comfurtable flights for all the customers<br>
-                                  </p>
+                                    We offer the most cheapest and comfurtable flights for all the customers</p>
                                 </div>
                             </div>
                         </div>

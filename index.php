@@ -75,7 +75,7 @@
                                </div>
                                <div class="logo-black">
                                     <a href="index.html">
-
+                                    <img src="img/logo-1.png" alt="" class="img-fluid">
                                 </a>
                                </div>
                             </div>
@@ -86,7 +86,7 @@
                                     </li>
                                     <li class="nav-item"> <a class="nav-link" href="tour-result-list.html">Bookings</a>
                                     </li>
-                                    <li class="nav-item"> <a class="nav-link" href="contact.html">contact</a>
+                                    <li class="nav-item"> <a class="nav-link" href="contact.php">contact</a>
                                    </li>
                                   </nav>
 
@@ -100,7 +100,7 @@
                                      </li>
                                     <li class="nav-item"> <a class="nav-link" data-toggle="collapse" data-target="#tour" aria-expanded="true" aria-controls="tour" href="tour-result-list.html">Bookings</a>
                                       </li>
-                                  <li class="nav-item"> <a class="nav-link" href="contact.html">contact</a>
+                                  <li class="nav-item"> <a class="nav-link" href="contact.php">contact</a>
                                     </li>
 
 
@@ -135,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
             <!-- Tab Search Section -->
             <div class="tab-search">
