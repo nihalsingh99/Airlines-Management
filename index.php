@@ -329,24 +329,6 @@
 
             <!-- End About Us Section -->
             <!-- CTA Section -->
-            <div class="CTA-1">
-                <div class="CTA-content text-center text-white">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-8 offset-lg-2">
-                                <div class="CTA-text">
-                                    <h1 class="animated-Fade-In-Up-1">IT’S A BIG WORLD OUT THERE</h1>
-                                    <h3 class="animated-Fade-In-Up-2">GO EXPLORE</h3>
-                                    <p class="animated-Fade-In-Up-3">Wherever you want to go and whatever you want to do, makes it easy and supports you with 24/7 customer support. 28 million reported accommodation listings, including over 6.2 million homes, apartments, and other unique places to stay</p>
-                                </div>
-                                <div class="CTA-button"> <a href="index.php" class="btn btn-primary">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="contact-us">
                 <div class="content-contact-us">
                     <div class="container">
