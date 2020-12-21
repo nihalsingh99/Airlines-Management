@@ -43,7 +43,7 @@
                         <div class="col-md-6">
                             <ul class="topbar-left list-unstyled list-inline float-left">
                                 <li class="language">
-                                    <a href="index.html#" class="dropdown-text">
+                                    <a href="index.php#" class="dropdown-text">
                                         <img alt=""><span>Travel</span>
 
                                     </a>
@@ -69,12 +69,12 @@
                        <div class="col-md-12">
                            <div class="brand-logo">
                                <div class="logo-white">
-                                    <a href="index.html">
+                                    <a href="index.php">
 
                                 </a>
                                </div>
                                <div class="logo-black">
-                                    <a href="index.html">
+                                    <a href="index.php">
                                     <img src="img/logo-1.png" alt="" class="img-fluid">
                                 </a>
                                </div>
@@ -84,7 +84,7 @@
                                 <ul class="navbar-nav">
                                     <li class="nav-item"> <a class="nav-link active" href="index.php">Home</a>
                                     </li>
-                                    <li class="nav-item"> <a class="nav-link" href="tour-result-list.html">Bookings</a>
+                                    <li class="nav-item"> <a class="nav-link" href="tour-result-list.php">Bookings</a>
                                     </li>
                                     <li class="nav-item"> <a class="nav-link" href="contact.php">contact</a>
                                    </li>
@@ -98,7 +98,7 @@
                                 <ul class="navbar-nav" id="accordion">
                                     <li class="nav-item"> <a class="nav-link active" data-toggle="collapse" data-target="#home" aria-expanded="true" aria-controls="home" href="index.php">Home</a>
                                      </li>
-                                    <li class="nav-item"> <a class="nav-link" data-toggle="collapse" data-target="#tour" aria-expanded="true" aria-controls="tour" href="tour-result-list.html">Bookings</a>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="collapse" data-target="#tour" aria-expanded="true" aria-controls="tour" href="tour-result-list.php">Bookings</a>
                                       </li>
                                   <li class="nav-item"> <a class="nav-link" href="contact.php">contact</a>
                                     </li>
@@ -144,7 +144,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
-                                    <li class="nav-item"> <a class="nav-link active" id="pills-flight-tab" data-toggle="pill" href="index.html#pills-flight" role="tab" aria-controls="pills-flight" aria-selected="true"><i class="fas fa-plane"></i>Flight</a>
+                                    <li class="nav-item"> <a class="nav-link active" id="pills-flight-tab" data-toggle="pill" href="index.php#pills-flight" role="tab" aria-controls="pills-flight" aria-selected="true"><i class="fas fa-plane"></i>Flight</a>
                                     </li>
                                 </ul>
                             </div>
@@ -206,7 +206,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <div class="group-btn-flight"> <a href="index.html" class="btn btn-primary"><i class="fas fa-search"></i>Search now </a>
+                                                        <div class="group-btn-flight"> <a href="index.php" class="btn btn-primary"><i class="fas fa-search"></i>Search now </a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -356,7 +356,7 @@
                         <div class="col-md-12 col-lg-3">
                             <div class="info-company-widget">
                                 <div class="footer-logo">
-                                    <h1><a href="index.html">Travel</a></h1>
+                                    <h1><a href="index.php">Travel</a></h1>
                                 </div>
                                 <div class="content-widget">
                                     <p>Travel .</p> <span><i class="fas fa-phone"></i>1800-123-1234</span>

@@ -72,6 +72,8 @@ session_start();
                           <?php echo $_SESSION['username']; ?>
              <?php endif ?></a>
                                 </li>
+                                <li class="topbar-logout"><a href="../index.php"><i class="fas fa-user"></i>Logout</li><?php if (isset($_GET['logout'])) : ?>
+              <?php endif ?></a>
 
                             </ul>
                         </div>
@@ -115,7 +117,7 @@ session_start();
                                      </li>
                                     <li class="nav-item"> <a class="nav-link" data-toggle="collapse" data-target="#tour" aria-expanded="true" aria-controls="tour" href="booking.php">Bookings</a>
                                       </li>
-                                  <li class="nav-item"> <a class="nav-link" href="contact.html">contact</a>
+                                  <li class="nav-item"> <a class="nav-link" href="contact.php">contact</a>
                                     </li>
 
 
@@ -158,7 +160,7 @@ session_start();
                         <div class="row">
                             <div class="col-md-12">
                                 <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
-                                    <li class="nav-item"> <a class="nav-link active" id="pills-flight-tab" data-toggle="pill" href="index.html#pills-flight" role="tab" aria-controls="pills-flight" aria-selected="true"><i class="fas fa-plane"></i>Flight</a>
+                                    <li class="nav-item"> <a class="nav-link active" id="pills-flight-tab" data-toggle="pill" href="index.php#pills-flight" role="tab" aria-controls="pills-flight" aria-selected="true"><i class="fas fa-plane"></i>Flight</a>
                                     </li>
                                 </ul>
                             </div>
@@ -173,56 +175,9 @@ session_start();
                                     <div class="tab-pane fade show active" id="pills-flight" role="tabpanel" aria-labelledby="pills-flight-tab">
                                         <div class="base-find-flight">
                                             <div class="find-flight-title text-center">
-                                                <h1>Find Your Flight</h1>
+                                                <h1>Your Booked Flights are</h1>
                                             </div>
-                                            <div class="find-flight-form">
-                                                <div class="row">
-                                                    <div class="col-md-12 col-lg-12">
-                                                        <div class="group-radio">
-                                                        <div class="rdio form-check form-check-inline"> <input name="radio" value="1" id="radio1" type="radio" checked>
-                                                          <label for="radio1">One-way</label>
-                                                        </div>
-                                                        <div class="rdio form-check form-check-inline">
-                                                          <input name="radio" value="2" id="radio2" type="radio">
-                                                          <label for="radio2">Return</label>
-                                                        </div>
-                                                    </div>
-                                                    </div>
-                                                    <div class="col-md-8 col-lg-3">
-                                                        <div class="form-group">
-                                                            <label>Source</label>
-                                                            <input type="text" class="form-control" placeholder="Write the place"> <i class="fas fa-map-marker-alt"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-8 col-lg-3">
-                                                        <div class="form-group">
-                                                            <label>Destination</label>
-                                                            <input type="text" class="form-control" placeholder="Write the place"> <i class="fas fa-map-marker-alt"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6 col-md-3 col-lg-2">
-                                                        <div class="form-group">
-                                                            <label>Date</label>
-                                                            <input type="text" class="form-control date" placeholder="MM/DD/YY"> <i class="fas fa-calendar-alt"></i>
-                                                        </div>
-                                                    </div>
 
-                                                    <div class="col-6 col-md-3 col-lg-2">
-                                                        <div class="form-group">
-                                                            <label>Adult</label>
-                                                            <input type="text" class="form-control" placeholder="1"> <i class="fas fa-user"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6 col-md-3 col-lg-2">
-                                                        <div class="form-group">
-                                                            <label>Children</label>
-                                                            <input type="text" class="form-control" placeholder="1"> <i class="fas fa-user"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <div class="group-btn-flight"> <a href="index.html" class="btn btn-primary"><i class="fas fa-search"></i>Search now </a>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -233,74 +188,7 @@ session_start();
                     </div>
                 </div>
             </div>
-            <!-- End Tab Search Section -->
-
-            <!-- End Awesome Tours Section -->
-            <!-- Services Tour Section -->
-            <div class="services-tour">
-                <div class="group-services-tour">
-                    <div class="container">
-                        <div class="row-services-1">
-                            <div class="row">
-                                <div class="col-md-12 col-lg-4">
-                                    <div class="card-services-tour animated-Fade-In-1 text-center"> <i class="fas fa-camera-retro fa-3x"></i>
-                                        <div class="content-services-tour">
-                                            <h3>best tour services</h3>
-                                            <p>We understand you may need to change your travel plans. To get the latest info.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-lg-4">
-                                    <div class="card-services-tour animated-Fade-In-2 text-center"> <i class="fas fa-coffee fa-3x"></i>
-                                        <div class="content-services-tour">
-                                            <h3>best package tour</h3>
-                                            <p>We understand you may need to change your travel plans. To get the latest info.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-lg-4">
-                                    <div class="card-services-tour animated-Fade-In-3 text-center"> <i class="fas fa-luggage-cart fa-3x"></i>
-                                        <div class="content-services-tour">
-                                            <h3>Handpicked Hotels</h3>
-                                            <p>We understand you may need to change your travel plans. To get the latest info.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row-services-2">
-                            <div class="row">
-                                <div class="col-md-12 col-lg-4">
-                                    <div class="card-services-tour animated-Fade-In-4 text-center"> <i class="fas fa-heart fa-3x"></i>
-                                        <div class="content-services-tour">
-                                            <h3>Accesibility managment</h3>
-                                            <p>We understand you may need to change your travel plans. To get the latest info.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-lg-4">
-                                    <div class="card-services-tour animated-Fade-In-5 text-center"> <i class="fas fa-mountain fa-3x"></i>
-                                        <div class="content-services-tour">
-                                            <h3>Latest Model Vehicles</h3>
-                                            <p>We understand you may need to change your travel plans. To get the latest info.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-lg-4">
-                                    <div class="card-services-tour animated-Fade-In-6 text-center"> <i class="fas fa-subway fa-3x"></i>
-                                        <div class="content-services-tour">
-                                            <h3>Premium city tours</h3>
-                                            <p>We understand you may need to change your travel plans. To get the latest info.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Services Tour Section -->
-            <!-- Number Features Section -->
+<!-- Number Features Section -->
             <div class="number-features">
                 <div class="group-number-features">
                     <div class="container">
@@ -338,12 +226,7 @@ session_start();
                     </div>
                 </div>
             </div>
-            <!-- End Number Features Section -->
-            <!-- About Us Section -->
-
-            <!-- End About Us Section -->
-            <!-- CTA Section -->
-
+<!-- CTA Section -->
             <div class="contact-us">
                 <div class="content-contact-us">
                     <div class="container">
@@ -361,8 +244,7 @@ session_start();
         </div>
 
     </div>
-    <!-- End Content Page -->
-    <!-- Footer Style -->
+<!-- Footer Style -->
     <footer>
         <div class="bg-footer">
             <div class="footer-content">
@@ -371,7 +253,7 @@ session_start();
                         <div class="col-md-12 col-lg-3">
                             <div class="info-company-widget">
                                 <div class="footer-logo">
-                                    <h1><a href="index.html">Travel</a></h1>
+                                    <h1><a href="index.php">Travel</a></h1>
                                 </div>
                                 <div class="content-widget">
                                     <p>Travel .</p> <span><i class="fas fa-phone"></i>1800-123-1234</span>

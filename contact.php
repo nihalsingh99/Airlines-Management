@@ -43,10 +43,10 @@
                         <div class="col-md-6">
                             <ul class="topbar-left list-unstyled list-inline float-left">
                                 <li class="language">
-                                    <a href="index.html#" class="dropdown-text">
+                                    <a href="index.php#" class="dropdown-text">
                                         <img alt=""><span>Travel</span>
 
-                                    </a>
+                                    </a>.php
 
                                 </li>
 
@@ -69,12 +69,12 @@
                        <div class="col-md-12">
                            <div class="brand-logo">
                                <div class="logo-white">
-                                    <a href="index.html">
+                                    <a href="index.php">
 
                                 </a>
                                </div>
                                <div class="logo-black">
-                                    <a href="index.html">
+                                    <a href="index.php">
                                     <img src="img/logo-1.png" alt="" class="img-fluid">
                                 </a>
                                </div>
@@ -84,7 +84,7 @@
                                 <ul class="navbar-nav">
                                     <li class="nav-item"> <a class="nav-link " href="index.php">Home</a>
                                     </li>
-                                    <li class="nav-item"> <a class="nav-link" href="tour-result-list.html">Bookings</a>
+                                    <li class="nav-item"> <a class="nav-link" href="tour-result-list.php">Bookings</a>
                                     </li>
                                     <li class="nav-item"> <a class="nav-link active" href="contact.php">contact</a>
                                    </li>
@@ -98,7 +98,7 @@
                                 <ul class="navbar-nav" id="accordion">
                                     <li class="nav-item"> <a class="nav-link " data-toggle="collapse" data-target="#home" aria-expanded="true" aria-controls="home" href="index.php">Home</a>
                                      </li>
-                                    <li class="nav-item"> <a class="nav-link" data-toggle="collapse" data-target="#tour" aria-expanded="true" aria-controls="tour" href="tour-result-list.html">Bookings</a>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="collapse" data-target="#tour" aria-expanded="true" aria-controls="tour" href="tour-result-list.php">Bookings</a>
                                       </li>
                                   <li class="nav-item"> <a class="nav-link active" href="contact.php">contact</a>
                                     </li>
@@ -272,7 +272,7 @@
                         <div class="col-md-12 col-lg-3">
                             <div class="info-company-widget">
                                 <div class="footer-logo">
-                                    <h1><a href="index.html">Travel</a></h1>
+                                    <h1><a href="index.php">Travel</a></h1>
                                 </div>
                                 <div class="content-widget">
                                     <p>Travel .</p> <span><i class="fas fa-phone"></i>1800-123-1234</span>

@@ -72,7 +72,8 @@ session_start();
                           <?php echo $_SESSION['username']; ?>
              <?php endif ?></a>
                                 </li>
-
+                                <li class="topbar-logout"><a href="../index.php"><i class="fas fa-user"></i>Logout</li><?php if (isset($_GET['logout'])) : ?>
+              <?php endif ?></a>
                             </ul>
                         </div>
                     </div>
@@ -113,9 +114,9 @@ session_start();
                                 <ul class="navbar-nav" id="accordion">
                                     <li class="nav-item"> <a class="nav-link active" data-toggle="collapse" data-target="#home" aria-expanded="true" aria-controls="home" href="index.php">Home</a>
                                      </li>
-                                    <li class="nav-item"> <a class="nav-link" data-toggle="collapse" data-target="#tour" aria-expanded="true" aria-controls="tour" href="tour-result-list.html">Bookings</a>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="collapse" data-target="#tour" aria-expanded="true" aria-controls="tour" href="tour-result-list.php">Bookings</a>
                                       </li>
-                                  <li class="nav-item"> <a class="nav-link" href="contact.html">contact</a>
+                                  <li class="nav-item"> <a class="nav-link" href="contact.php">contact</a>
                                     </li>
 
 
@@ -220,7 +221,7 @@ session_start();
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <div class="group-btn-flight"> <a href="index.html" class="btn btn-primary"><i class="fas fa-search"></i>Search now </a>
+                                                        <div class="group-btn-flight"> <a href="Flights.php" class="btn btn-primary"><i class="fas fa-search"></i>Search now </a>
                                                         </div>
                                                     </div>
                                                 </div>

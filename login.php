@@ -4,7 +4,7 @@
 <html lang="en">
 
 <head>
-    <title>Tralveloky | Login Page</title>
+    <title>Travel | Login Page</title>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,8 +23,9 @@
     <link href="css/responsive.css" rel="stylesheet">
 </head>
 
+
 <body>
-    <!-- Preloader -->
+      <!-- Preloader -->
     <div class="spinner-wrapper">
         <div class="logo-spinner">
             <img src="img/logo-2.png" alt="">
@@ -47,8 +48,8 @@
                             <div class="col-md-12 col-lg-6 offset-lg-3">
                                 <div class="base-form-login">
                                     <div class="title-form text-center">
-                                        <a href="index.html"><img src="img/logo-2.png" alt=""></a>
-                                        <h3>LOGIN TO YOUR traveloky.COM ACCOUNT!</h3>
+                                        <a href="index.php"><img src="img/logo-2.png" alt=""></a>
+                                        <h3>LOGIN TO YOUR travel.COM ACCOUNT!</h3>
                                     </div>
                                     <div class="form-login">
                                       <form class="" action="login.php" method="post">
@@ -61,8 +62,8 @@
                                             <input type="text" class="form-control" name="password" placeholder="Enter Your Password"> <i class="fas fa-key"></i>
                                         </div>
                                         <button type="submit"  name="login_user" class="btn btn-primary">Sign In</button>
-                                      </form>
 
+                                      </form>
                                     </div>
                                 </div>
                             </div>

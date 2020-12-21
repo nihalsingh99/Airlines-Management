@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Tralveloky | Register Page</title>
+    <title>Travel | Register Page</title>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -46,7 +46,7 @@
                             <div class="col-md-12 col-lg-6 offset-lg-3">
                                 <div class="base-form-register">
                                     <div class="title-form text-center">
-                                        <a href="index.html">
+                                        <a href="index.php">
                                             <img src="img/logo-2.png" alt="">
                                         </a>
                                         <h3>CREATE YOUR ACCOUNT AND JOIN WITH US!</h3>

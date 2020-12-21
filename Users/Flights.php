@@ -99,11 +99,11 @@ session_start();
 
                             <nav class="navbar navbar-expand-lg float-right">
                                 <ul class="navbar-nav">
-                                    <li class="nav-item"> <a class="nav-link" href="index.php">Home</a>
+                                    <li class="nav-item"> <a class="nav-link active" href="index.php">Home</a>
                                     </li>
                                     <li class="nav-item"> <a class="nav-link" href="booking.php">Bookings</a>
                                     </li>
-                                    <li class="nav-item"> <a class="nav-link active" href="contact.php">contact</a>
+                                    <li class="nav-item"> <a class="nav-link" href="contact.php">contact</a>
                                    </li>
                                   </nav>
 
@@ -113,11 +113,11 @@ session_start();
                             </div>
                             <nav class="navbar for-mobile">
                                 <ul class="navbar-nav" id="accordion">
-                                    <li class="nav-item"> <a class="nav-link" data-toggle="collapse" data-target="#home" aria-expanded="true" aria-controls="home" href="index.php">Home</a>
+                                    <li class="nav-item"> <a class="nav-link active" data-toggle="collapse" data-target="#home" aria-expanded="true" aria-controls="home" href="index.php">Home</a>
                                      </li>
                                     <li class="nav-item"> <a class="nav-link" data-toggle="collapse" data-target="#tour" aria-expanded="true" aria-controls="tour" href="tour-result-list.php">Bookings</a>
                                       </li>
-                                  <li class="nav-item"> <a class="nav-link active" href="contact.php">contact</a>
+                                  <li class="nav-item"> <a class="nav-link" href="contact.php">contact</a>
                                     </li>
 
 
@@ -144,8 +144,12 @@ session_start();
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="text-slide text-center">
-                                    <h1 class="animated-Fade-In-Up-1">DISCOVER</h1>
-                                    <h3 class="animated-Fade-In-Up-2">THE WORLD YOU HAVE NEVER SEEN</h3>
+                                    <h1 class="animated-Fade-In-Up-1">Flights</h1>
+                                     <table id=table>
+                                       <ul>Source</ul>
+
+
+                                     </table>
 
                                 </div>
                             </div>
@@ -153,136 +157,15 @@ session_start();
                     </div>
                 </div>
               </div>
+            <!-- Tab Search Section -->
 
-
-            <!-- End Awesome Tours Section -->
-            <!-- Services Tour Section -->
-            <div class="services-tour">
-                <div class="group-services-tour">
-                    <div class="container">
-                        <div class="row-services-1">
-                            <div class="row">
-                                <div class="col-md-12 col-lg-4">
-                                    <div class="card-services-tour animated-Fade-In-1 text-center"> <i class="fas fa-camera-retro fa-3x"></i>
-                                        <div class="content-services-tour">
-                                            <h3>best tour services</h3>
-                                            <p>We understand you may need to change your travel plans. To get the latest info.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-lg-4">
-                                    <div class="card-services-tour animated-Fade-In-2 text-center"> <i class="fas fa-coffee fa-3x"></i>
-                                        <div class="content-services-tour">
-                                            <h3>best package tour</h3>
-                                            <p>We understand you may need to change your travel plans. To get the latest info.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-lg-4">
-                                    <div class="card-services-tour animated-Fade-In-3 text-center"> <i class="fas fa-luggage-cart fa-3x"></i>
-                                        <div class="content-services-tour">
-                                            <h3>Handpicked Hotels</h3>
-                                            <p>We understand you may need to change your travel plans. To get the latest info.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row-services-2">
-                            <div class="row">
-                                <div class="col-md-12 col-lg-4">
-                                    <div class="card-services-tour animated-Fade-In-4 text-center"> <i class="fas fa-heart fa-3x"></i>
-                                        <div class="content-services-tour">
-                                            <h3>Accesibility managment</h3>
-                                            <p>We understand you may need to change your travel plans. To get the latest info.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-lg-4">
-                                    <div class="card-services-tour animated-Fade-In-5 text-center"> <i class="fas fa-mountain fa-3x"></i>
-                                        <div class="content-services-tour">
-                                            <h3>Latest Model Vehicles</h3>
-                                            <p>We understand you may need to change your travel plans. To get the latest info.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-lg-4">
-                                    <div class="card-services-tour animated-Fade-In-6 text-center"> <i class="fas fa-subway fa-3x"></i>
-                                        <div class="content-services-tour">
-                                            <h3>Premium city tours</h3>
-                                            <p>We understand you may need to change your travel plans. To get the latest info.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Services Tour Section -->
-            <!-- Number Features Section -->
-            <div class="number-features">
-                <div class="group-number-features">
-                    <div class="container">
-                        <div class="row">
-                            <div class="number-title">
-                                <h1>Features</h1>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 col-lg-3">
-                                <div class="card-number text-center">
-                                    <h3 class="count">452</h3>
-                                    <p>First Class Flights</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="card-number text-center">
-                                    <h3 class="count">563</h3>
-                                    <p>Premium Flights</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="card-number text-center">
-                                    <h3 class="count">234</h3>
-                                    <p>Handpicked Flghts</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="card-number text-center">
-                                    <h3 class="count">673</h3>
-                                    <p>Latest Flights</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- End Number Features Section -->
             <!-- About Us Section -->
 
             <!-- End About Us Section -->
             <!-- CTA Section -->
 
-            <div class="contact-us">
-                <div class="content-contact-us">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-6 offset-lg-6">
-                                <div class="form-contact-us animated-Fade-In-Up-2">
-                                    <h1>Travel</h1>
-                                    <p>This is the world finest site for Flight bookings.<br>
-                                    We offer the most cheapest and comfurtable flights for all the customers</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-
-    </div>
     <!-- End Content Page -->
     <!-- Footer Style -->
     <footer>
