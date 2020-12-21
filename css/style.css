@@ -738,6 +738,13 @@ ul.navbar-nav li i {
   -webkit-animation: animation2 5s linear infinite;
   animation: animation2 5s linear infinite
 }
+.table {
+
+    border: 1px solid white;
+    border-collapse: collapse;
+  width:100%;
+}
+
 @-webkit-keyframes animation {
   0% {
     background-position-x: 0

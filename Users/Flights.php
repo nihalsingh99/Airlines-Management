@@ -145,18 +145,22 @@ session_start();
                             <div class="col-md-12">
                                 <div class="text-slide text-center">
                                     <h1 class="animated-Fade-In-Up-1">Flights</h1>
-                                     <table id=table>
-                                       <ul>Source</ul>
-
-
-                                     </table>
-
+                                    <table class="table">
+                                      <tr>
+                                        <th>Source</th>
+                                        <th>Destination</th>
+                                        <th>Date</th>
+                                        <th>Flights</th>
+                                        <th>Flight Time</th>
+                                        <th>Price</th>
+                                      </tr>
+                                  </table>
                                 </div>
+                              </div>
                             </div>
                         </div>
                     </div>
                 </div>
-              </div>
             <!-- Tab Search Section -->
 
             <!-- End Number Features Section -->
