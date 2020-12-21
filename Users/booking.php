@@ -11,7 +11,6 @@ session_start();
     header("location: .././index.php");
   }
 ?>
-
 <!DOCTYPE html>
 <html>
 
@@ -178,7 +177,7 @@ session_start();
                                                 <h1>Your Booked Flights are</h1>
                                             </div>
 
-                                                </div>
+                                            </div>
                                             </div>
                                         </div>
                                     </div>
