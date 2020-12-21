@@ -82,9 +82,9 @@
 
                             <nav class="navbar navbar-expand-lg float-right">
                                 <ul class="navbar-nav">
-                                    <li class="nav-item"> <a class="nav-link active" href="index.php">Home</a>
+                                    <li class="nav-item"> <a class="nav-link" href="index.php">Home</a>
                                     </li>
-                                    <li class="nav-item"> <a class="nav-link" href="booking.php">Bookings</a>
+                                    <li class="nav-item"> <a class="nav-link active" href="booking.php">Bookings</a>
                                     </li>
                                     <li class="nav-item"> <a class="nav-link" href="contact.php">contact</a>
                                    </li>
@@ -159,56 +159,9 @@
                                     <div class="tab-pane fade show active" id="pills-flight" role="tabpanel" aria-labelledby="pills-flight-tab">
                                         <div class="base-find-flight">
                                             <div class="find-flight-title text-center">
-                                                <h1>Find Your Flight</h1>
+                                                <h1>Login to start booking ur flights.</h1>
                                             </div>
-                                            <div class="find-flight-form">
-                                                <div class="row">
-                                                    <div class="col-md-12 col-lg-12">
-                                                        <div class="group-radio">
-                                                        <div class="rdio form-check form-check-inline"> <input name="radio" value="1" id="radio1" type="radio" checked>
-                                                          <label for="radio1">One-way</label>
-                                                        </div>
-                                                        <div class="rdio form-check form-check-inline">
-                                                          <input name="radio" value="2" id="radio2" type="radio">
-                                                          <label for="radio2">Return</label>
-                                                        </div>
-                                                    </div>
-                                                    </div>
-                                                    <div class="col-md-8 col-lg-3">
-                                                        <div class="form-group">
-                                                            <label>Source</label>
-                                                            <input type="text" class="form-control" placeholder="Write the place"> <i class="fas fa-map-marker-alt"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-8 col-lg-3">
-                                                        <div class="form-group">
-                                                            <label>Destination</label>
-                                                            <input type="text" class="form-control" placeholder="Write the place"> <i class="fas fa-map-marker-alt"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6 col-md-3 col-lg-2">
-                                                        <div class="form-group">
-                                                            <label>Date</label>
-                                                            <input type="text" class="form-control date" placeholder="MM/DD/YY"> <i class="fas fa-calendar-alt"></i>
-                                                        </div>
-                                                    </div>
 
-                                                    <div class="col-6 col-md-3 col-lg-2">
-                                                        <div class="form-group">
-                                                            <label>Adult</label>
-                                                            <input type="text" class="form-control" placeholder="1"> <i class="fas fa-user"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6 col-md-3 col-lg-2">
-                                                        <div class="form-group">
-                                                            <label>Children</label>
-                                                            <input type="text" class="form-control" placeholder="1"> <i class="fas fa-user"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <div class="group-btn-flight"> <a href="index.php" class="btn btn-primary"><i class="fas fa-search"></i>Search now </a>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -217,9 +170,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- End Tab Search Section -->
+                <!-- End Tab Search Section -->
 
             <!-- End Awesome Tours Section -->
             <!-- Services Tour Section -->

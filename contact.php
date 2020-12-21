@@ -84,7 +84,7 @@
                                 <ul class="navbar-nav">
                                     <li class="nav-item"> <a class="nav-link " href="index.php">Home</a>
                                     </li>
-                                    <li class="nav-item"> <a class="nav-link" href="tour-result-list.php">Bookings</a>
+                                    <li class="nav-item"> <a class="nav-link" href="booking.php">Bookings</a>
                                     </li>
                                     <li class="nav-item"> <a class="nav-link active" href="contact.php">contact</a>
                                    </li>
@@ -98,7 +98,7 @@
                                 <ul class="navbar-nav" id="accordion">
                                     <li class="nav-item"> <a class="nav-link " data-toggle="collapse" data-target="#home" aria-expanded="true" aria-controls="home" href="index.php">Home</a>
                                      </li>
-                                    <li class="nav-item"> <a class="nav-link" data-toggle="collapse" data-target="#tour" aria-expanded="true" aria-controls="tour" href="tour-result-list.php">Bookings</a>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="collapse" data-target="#tour" aria-expanded="true" aria-controls="tour" href="booking.php">Bookings</a>
                                       </li>
                                   <li class="nav-item"> <a class="nav-link active" href="contact.php">contact</a>
                                     </li>
