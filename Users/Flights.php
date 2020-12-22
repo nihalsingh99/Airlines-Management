@@ -144,35 +144,57 @@ session_start();
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="text-slide text-center">
+                                  <!--Flight Sear-->
                                     <h1 class="animated-Fade-In-Up-1">Flights</h1>
-                                    <table class="table">
-                                      <tr>
-                                        <th>Source</th>
-                                        <th>Destination</th>
-                                        <th>Date</th>
-                                        <th>Flights</th>
-                                        <th>Flight Time</th>
-                                        <th>Price</th>
-                                      </tr>
-                                      <?php
+                                    <?php
                                       $db = mysqli_connect('localhost', 'root', '', 'air');
-                                      if(isset($_POST['search']))
-                                        {
-                                      $query= "SELECT" * FROM flights ORDER BY id ASC;
-                                      $query_run = mysqli_query($db,$query);
-
-                                      while($row= mysqli_fech_array($query_run))
-                                      {
+                                      $query = "SELECT * FROM flights ";
+                                      $run = mysqli_query($db,$query);
+                                      if(mysqli_num_rows($run) > 0){
                                         ?>
-                                        <tr>
-                                          <td> <?php echo $row['flight_name'];?></td>
-                                          <td> <?php echo $row['flight_time'];?></td>
-                                          <td> <?php echo $row['Price'];?></td>
-                                        </tr>
-                                      }
-                                    } ?>
 
-                                  </table>
+                                        <table class="table align-items-center table-flush" >
+                                          <thead class="thead-light">
+                                            <tr>
+                                              <th scope="col">Flights</th>
+                                              <th scope="col">Flights PNR</th>
+                                              <th scope="col">Flight Time</th>
+                                              <th scope="col">Price</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                            <?php
+                                            while($row = mysqli_fetch_array($run)){
+                                              $flight_name = $row['flight_name'];
+                                              $flight_PNR = $row['flight_PNR'];
+                                              $flight_time =$row['flight_time'];
+                                              $Price = $row['Price'];
+
+                                              ?>
+                                              <tr>
+
+                                                <th scope="row">
+                                                  <?php echo $flight_name; ?>
+                                                </th>
+                                                <td>
+                                                  <?php echo $flight_PNR; ?>
+                                                </td>
+                                                <td>
+                                                  <?php echo $flight_time; ?>
+                                                </td>
+                                                <td>
+                                                  <?php echo $Price; ?>
+                                                </td>
+
+                                              </tr>
+                                            <?php } ?>
+                                          </tbody>
+                                          <?php
+                                        }else {
+                                          echo "<center><h2>No Flights Available in Library</h2><br><hr></center>";
+                                        }
+                                        ?>
+                                      </table>
                                 </div>
                               </div>
                             </div>
