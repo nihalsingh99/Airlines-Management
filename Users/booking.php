@@ -177,15 +177,55 @@ session_start();
                                             <div class="find-flight-title text-center">
                                                 <h1>Your Booked Flights are</h1>
                                             </div>
-                                            <table class="table">
-                                              <tr>
-                                                <th>flight_name</th>
-                                                <th>flight_PNR</th>
-                                                <th>Date</th>
-                                                <th>time</th>
-                                                <th>Price</th>
-                                              </tr> <br>
-                                           </table>
+                                            <?php
+                                              $db = mysqli_connect('localhost', 'root', '', 'air');
+                                              $query = "SELECT * FROM booking_done ";
+                                              $run = mysqli_query($db,$query);
+                                              if(mysqli_num_rows($run) > 0){
+                                                ?>
+
+                                                <table class="table align-items-center table-flush" >
+                                                  <thead class="thead-light">
+                                                    <tr>
+                                                      <th scope="col">Flights</th>
+                                                      <th scope="col">Flights PNR</th>
+                                                      <th scope="col">Flight Time</th>
+                                                      <th scope="col">Price</th>
+                                                      </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                    <?php
+                                                    while($row = mysqli_fetch_array($run)){
+                                                      $flight_name = $row['flight_name'];
+                                                      $flight_PNR = $row['flight_PNR'];
+                                                      $Time =$row['Time'];
+                                                      $Price = $row['Price'];
+
+                                                      ?>
+                                                      <tr>
+
+                                                        <th scope="row">
+                                                          <?php echo $flight_name; ?>
+                                                        </th>
+                                                        <td>
+                                                          <?php echo $flight_PNR; ?>
+                                                        </td>
+                                                        <td>
+                                                          <?php echo $Time; ?>
+                                                        </td>
+                                                        <td>
+                                                          <?php echo $Price; ?>
+                                                        </td>
+
+                                                      </tr>
+                                                    <?php } ?>
+                                                  </tbody>
+                                                  <?php
+                                                }else {
+                                                  echo "<center><h2>No Flights Available in Library</h2><br><hr></center>";
+                                                }
+                                                ?>
+                                              </table>
                                             </div>
                                             </div>
                                         </div>
