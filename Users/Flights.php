@@ -154,6 +154,24 @@ session_start();
                                         <th>Flight Time</th>
                                         <th>Price</th>
                                       </tr>
+                                      <?php
+                                      $db = mysqli_connect('localhost', 'root', '', 'air');
+                                      if(isset($_POST['search']))
+                                        {
+                                      $query= "SELECT" * FROM flights ORDER BY id ASC;
+                                      $query_run = mysqli_query($db,$query);
+
+                                      while($row= mysqli_fech_array($query_run))
+                                      {
+                                        ?>
+                                        <tr>
+                                          <td> <?php echo $row['flight_name'];?></td>
+                                          <td> <?php echo $row['flight_time'];?></td>
+                                          <td> <?php echo $row['Price'];?></td>
+                                        </tr>
+                                      }
+                                    } ?>
+
                                   </table>
                                 </div>
                               </div>

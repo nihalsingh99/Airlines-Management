@@ -11,6 +11,7 @@ session_start();
     header("location: .././index.php");
   }
 ?>
+<?php include(".././server/login_server.php"); ?>
 <!DOCTYPE html>
 <html>
 
@@ -176,7 +177,15 @@ session_start();
                                             <div class="find-flight-title text-center">
                                                 <h1>Your Booked Flights are</h1>
                                             </div>
-
+                                            <table class="table">
+                                              <tr>
+                                                <th>flight_name</th>
+                                                <th>flight_PNR</th>
+                                                <th>Date</th>
+                                                <th>time</th>
+                                                <th>Price</th>
+                                              </tr> <br>
+                                           </table>
                                             </div>
                                             </div>
                                         </div>
