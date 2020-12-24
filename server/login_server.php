@@ -48,8 +48,8 @@ if (isset($_POST['reg_user'])) {
   if (count($errors) == 0) {
     $password = md5($password_1);//encrypt the password before saving in the database
 
-    $query = "INSERT INTO user_reg (reg_date, username, email, password, role, tandc)
-          VALUES('$reg_date', '$username', '$email', '$password', 'student','true')";
+    $query = "INSERT INTO user_reg (reg_date, username, email, password, tandc)
+          VALUES('$reg_date', '$username', '$email', '$password','true')";
     mysqli_query($db, $query);
     $_SESSION['username'] = $username;
     $_SESSION['success'] = "You are now logged in";

@@ -222,7 +222,7 @@ session_start();
                                                   </tbody>
                                                   <?php
                                                 }else {
-                                                  echo "<center><h2>No Flights Available in Library</h2><br><hr></center>";
+                                                  echo "<center><h2>No Flights Booked </h2><br><hr></center>";
                                                 }
                                                 ?>
                                               </table>

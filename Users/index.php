@@ -190,34 +190,34 @@ session_start();
                                                     </div>
                                                     </div>
                                                     <div class="col-md-8 col-lg-3">
-                                                        <div class="form-group" action="required">
+                                                        <div class="form-group">
                                                             <label>Source</label>
-                                                            <input type="text" class="form-control" placeholder="Write the place"> <i class="fas fa-map-marker-alt"></i>
+                                                            <input type="text" class="form-control" placeholder="Write the place" required> <i class="fas fa-map-marker-alt"></i>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-8 col-lg-3">
                                                         <div class="form-group" >
                                                             <label>Destination</label>
-                                                            <input type="text" class="form-control" placeholder="Write the place" action="required"> <i class="fas fa-map-marker-alt"></i>
+                                                            <input type="text" class="form-control" placeholder="Write the place" required> <i class="fas fa-map-marker-alt"></i>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-md-3 col-lg-2">
                                                         <div class="form-group" >
                                                             <label>Date</label>
-                                                            <input type="text" class="form-control date" placeholder="MM/DD/YY" action="required"> <i class="fas fa-calendar-alt"></i>
+                                                            <input type="text" class="form-control date" placeholder="MM/DD/YY" required> <i class="fas fa-calendar-alt"></i>
                                                         </div>
                                                     </div>
 
                                                     <div class="col-6 col-md-3 col-lg-2">
                                                         <div class="form-group" >
                                                             <label>Adult</label>
-                                                            <input type="text" class="form-control" placeholder="0" action="required"> <i class="fas fa-user"></i>
+                                                            <input type="text" class="form-control" placeholder="0" required> <i class="fas fa-user"></i>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-md-3 col-lg-2">
                                                         <div class="form-group" >
                                                             <label>Children</label>
-                                                            <input type="text" class="form-control" placeholder="0" action="required"> <i class="fas fa-user"></i>
+                                                            <input type="text" class="form-control" placeholder="0" required> <i class="fas fa-user"></i>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12">

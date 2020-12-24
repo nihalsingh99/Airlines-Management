@@ -1,3 +1,6 @@
+<?php include ("db.php");
+$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+?>
 <?php
 session_start();
 
@@ -155,11 +158,18 @@ session_start();
 
                                         <table class="table align-items-center table-flush" >
                                           <thead class="thead-light">
+                                            <?php if(isset($error_msg)){
+                                                echo "<span style='color:red;' class='pull-right'>$error_msg</span>";
+                                              }else if(isset($msg)) {
+                                                  echo "<span style='color:green;' class='pull-right'>$msg</span>";
+                                                }
+                                                ?>
                                             <tr>
                                               <th scope="col">Flights</th>
                                               <th scope="col">Flights PNR</th>
                                               <th scope="col">Flight Time</th>
                                               <th scope="col">Price</th>
+                                              <th scope="col">Book</th>
                                               </tr>
                                           </thead>
                                           <tbody>
@@ -184,6 +194,9 @@ session_start();
                                                 </td>
                                                 <td>
                                                   <?php echo $Price; ?>
+                                                </td>
+                                                <td>
+                                                  <button class="btn btn-primary" type="submit" value="submit"  name="submit" ><a href="booking_page.php" class="btn btn-primary">Book Now</a></button>
                                                 </td>
 
                                               </tr>
