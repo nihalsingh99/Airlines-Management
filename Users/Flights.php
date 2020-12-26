@@ -108,6 +108,8 @@ session_start();
                                     </li>
                                     <li class="nav-item"> <a class="nav-link" href="contact.php">contact</a>
                                    </li>
+                                   <li class="nav-item"> <a class="nav-link" href="plane_details.php">Details</a>
+                                  </li>
                                   </nav>
 
                         <!-- Nav Mobile -->
@@ -122,6 +124,8 @@ session_start();
                                       </li>
                                   <li class="nav-item"> <a class="nav-link" href="contact.php">contact</a>
                                     </li>
+                                    <li class="nav-item"> <a class="nav-link" href="plane_details.php">Details</a>
+                                   </li>
 
 
                                 <div class="icon-nav-mobile-close"> <i class="fas fa-times"></i>
