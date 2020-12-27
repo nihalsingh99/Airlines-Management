@@ -194,7 +194,7 @@ session_start();
                                                   <?php echo $capacity; ?>
                                                 </td>
                                                 <td>
-                                                  
+
                                                 </td>
                                               </tr>
                                             <?php } ?>
@@ -211,17 +211,7 @@ session_start();
                         </div>
                     </div>
                 </div>
-            <!-- Tab Search Section -->
-
-            <!-- End Number Features Section -->
-            <!-- About Us Section -->
-
-            <!-- End About Us Section -->
-            <!-- CTA Section -->
-
-
-    <!-- End Content Page -->
-    <!-- Footer Style -->
+      <!-- Footer Style -->
     <footer>
         <div class="bg-footer">
             <div class="footer-content">
