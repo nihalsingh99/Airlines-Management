@@ -172,8 +172,7 @@ session_start();
                                               <th scope="col">Flights</th>
                                               <th scope="col">Flights PNR</th>
                                               <th scope="col">Flight Capacity</th>
-                                              <th scope="col">Type</th>
-                                            </tr>
+                                              </tr>
                                           </thead>
                                           <tbody>
                                             <?php
@@ -192,9 +191,6 @@ session_start();
                                                 </td>
                                                 <td>
                                                   <?php echo $capacity; ?>
-                                                </td>
-                                                <td>
-
                                                 </td>
                                               </tr>
                                             <?php } ?>
