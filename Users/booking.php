@@ -183,8 +183,15 @@ session_start();
                                             </div>
                                             <?php
                                               $db = mysqli_connect('localhost', 'root', '', 'air');
+                                              if(isset($_GET['delbooking_id']))
+                                              {
+                                                $delbooking_id = $_GET['delbooking_id'];
+                                                $sql ="DELETE FROM booking_done WHERE booking_id=?";
+                                                $run = mysqli_sql($db,$sql);
+                                              }
                                               $query = "SELECT * FROM booking_done ";
                                               $run = mysqli_query($db,$query);
+
                                               if(mysqli_num_rows($run) > 0){
                                                 ?>
 
@@ -195,11 +202,13 @@ session_start();
                                                       <th scope="col">Flights PNR</th>
                                                       <th scope="col">Flight Time</th>
                                                       <th scope="col">Price</th>
+                                                      <th scope="col">Cancel</th>
                                                       </tr>
                                                   </thead>
                                                   <tbody>
                                                     <?php
                                                     while($row = mysqli_fetch_array($run)){
+                                                      $booking_id = $row['booking_id'];
                                                       $flight_name = $row['flight_name'];
                                                       $flight_PNR = $row['flight_PNR'];
                                                       $Time =$row['Time'];
@@ -220,12 +229,17 @@ session_start();
                                                         <td>
                                                           <?php echo $Price; ?>
                                                         </td>
-
+                                                        <td>
+                                                        <a class="btn btn-danger btn-xs" href="booking.php?delbooking_id= <?php echo $booking_id; ?>">
+                                                          Cancel
+                                                          <span class="glyphican glyphicon-remove" aria-hidden="true"></span>
+                                                          </a>
+                                                          </td>
                                                       </tr>
                                                     <?php } ?>
                                                   </tbody>
-                                                  <?php
-                                                }else {
+                                                <?php
+                                              }else {
                                                   echo "<center><h2>No Flights Booked </h2><br><hr></center>";
                                                 }
                                                 ?>

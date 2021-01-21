@@ -172,6 +172,7 @@ session_start();
                                               <th scope="col">Flights</th>
                                               <th scope="col">Flights PNR</th>
                                               <th scope="col">Flight Capacity</th>
+                                              <th scope="col">Available</th>
                                               </tr>
                                           </thead>
                                           <tbody>
@@ -180,6 +181,7 @@ session_start();
                                               $flight_name = $row['flight_name'];
                                               $flight_PNR = $row['flight_PNR'];
                                               $capacity =$row['capacity'];
+                                              $Availability =$row['Availability'];
                                             ?>
                                               <tr>
 
@@ -191,6 +193,9 @@ session_start();
                                                 </td>
                                                 <td>
                                                   <?php echo $capacity; ?>
+                                                </td>
+                                                <td>
+                                                  <?php echo $Availability; ?>
                                                 </td>
                                               </tr>
                                             <?php } ?>
